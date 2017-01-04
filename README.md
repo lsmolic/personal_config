@@ -3,3 +3,5 @@
 * Add new SSH key to github user account https://github.com/settings/keys
 * Clone repo to home directory (ensure you gitignore any files that should not be tracked)
 * Go through existing config to find any lines that don't make sense for this setup.
+* Ensure you can paginate in terminal: defaults write com.googlecode.iterm2 AlternateMouseScroll -bool true
+
