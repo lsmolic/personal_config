@@ -1,7 +1,6 @@
 ###################################################################################
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-drwxr-xr-x    3 lucassmolic  staff   102B Jan 12  2015 .wireshark
-drwxr-xr-x    7 lucassmolic  staff   238B Jan 12  2015 .wireshark-etc
+
 #CONFIGURATION
 source ~/.bashrc
 source ~/.aliases
