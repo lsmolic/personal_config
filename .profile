@@ -1,4 +1,3 @@
-
 #CONFIGURATION
 source ~/personal_config/.bashrc
 #source ~/personal_config/.aliases
