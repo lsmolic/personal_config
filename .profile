@@ -1,10 +1,7 @@
-###################################################################################
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-drwxr-xr-x    3 lucassmolic  staff   102B Jan 12  2015 .wireshark
-drwxr-xr-x    7 lucassmolic  staff   238B Jan 12  2015 .wireshark-etc
+
 #CONFIGURATION
-source ~/.bashrc
-source ~/.aliases
+source ~/personal_config/.bashrc
+#source ~/personal_config/.aliases
 
 #ALIASES
 alias ll='ls -lahG'
@@ -12,6 +9,10 @@ alias sp='source ~/.profile'
 alias rv='rbenv'
 alias pv='pyenv'
 alias sub='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+alias rails='bundle exec rails'
+alias rake='bundle exec rake'
+alias rspec='bundle exec rspec'
+alias secrets='bundle exec secrets'
 
 #TOOLS
 
@@ -21,12 +22,13 @@ alias co='git checkout'
 alias st='git status'
 alias pl='git pull origin'
 alias int='git checkout integration'
+alias psef='ps -ef | grep -v System | grep -v Google | grep -v Appli'
 
-if [ -f ~/.git-completion.bash ]; then
-  . ~/.git-completion.bash
+if [ -f ~/personal_config/.git-completion.bash ]; then
+  source ~/personal_config/.git-completion.bash
 fi
 
-b(){
+boss(){
   clear;
   LINE=""
   i=0
@@ -40,3 +42,9 @@ b(){
                 i=$i+1
   done
 }
+alias b='boss'
+
+
+alias oo='ssh -i ~/.ssh/oo-staging-keypair.pem ubuntu@35.164.209.216'
+
+
