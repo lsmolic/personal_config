@@ -42,10 +42,6 @@ export PATH="/usr/local/opt/openssl/bin:$PATH"
 export PATH="/usr/local/Cellar:$PATH"
 
 
-alias macdown='/Applications/MacDown.app/Contents/SharedSupport/bin/macdown'
-alias mou='macdown'
-
-
 ###  POSTGRES
 ###################################################################################dd
 # PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
@@ -54,14 +50,14 @@ alias mou='macdown'
 ###  MYSQL
 ###################################################################################dd
 #PATH="/usr/local/mysql/bin:$PATH"
-PATH="/usr/local/git/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
+PATH="/usr/local/git/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 #PATH="/usr/local/packer:$PATH"
 #PATH="/usr/local/share/npm/lib/node_modules:$PATH"
 
 # C COMPILER
 ###################################################################################
 CPATH=/usr/local/Cellar:$CPATH
-export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
+#export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
 
 ###  PYTHON   #####################################################################
 ###################################################################################
