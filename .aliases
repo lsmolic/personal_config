@@ -1,0 +1,45 @@
+# CURRENT PROJECT
+alias hl='heroku logs --tail -a risky-business-api-beta'
+alias hc='heroku console -a risky-business-api-beta'
+
+
+
+
+alias rnd='open "rndebugger://set-debugger-loc?host=localhost&port=19001"'
+
+# Ruby/Rails/Sidekiq/Clock
+alias rv='rbenv'
+alias rails='bundle exec rails'
+alias rake='bundle exec rake'
+alias rspec='bundle exec rspec'
+alias secrets='bundle exec secrets'
+
+# Python
+alias pv='pyenv'
+
+#GIT
+alias co='git checkout'
+alias st='git status'
+alias pl='git pull origin'
+alias int='git checkout integration'
+
+##  APPLICATIONS
+alias sub='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+
+##  DATABASES
+alias mysql_start='sudo /usr/local/mysql/bin/mysqld start'
+alias mysql_stop='sudo /usr/local/mysql/bin/mysqld stop'
+
+##  FILESYSTEM
+alias sp='source ~/.profile'
+alias ll='ls -lahG'
+alias psef='ps -ef | grep -v System | grep -v Google | grep -v Appli'
+
+##  DATABASES
+alias mysql_start='sudo /usr/local/mysql/bin/mysqld start'
+alias mysql_stop='sudo /usr/local/mysql/bin/mysqld stop'
+
+##  FILESYSTEM
+alias sp='source ~/.profile'
+alias ll='ls -lahG'
+alias psef='ps -ef | grep -v System | grep -v Google | grep -v Appli'
