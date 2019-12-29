@@ -45,12 +45,17 @@ export PATH="/usr/local/opt/openssl/bin:$PATH"
 export PATH="/usr/local/Cellar:$PATH"
 
 ### HEROKU
-HEROKU_AC_BASH_SETUP_PATH=/Users/lsmolic/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH;
+HEROKU_AC_BASH_SETUP_PATH=$HOME/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH;
 
 ###  POSTGRES
 ###################################################################################dd
 # PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 # PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
+
+### NODE
+###################################################################################
+PATH="./node_modules/.bin:$PATH"
+
 
 ###  MYSQL
 ###################################################################################dd
@@ -66,14 +71,19 @@ CPATH=/usr/local/Cellar:$CPATH
 ###  PYTHON   #####################################################################
 ###################################################################################
 export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
+export PATH="$HOME/Library/Python/3.7/bin:$PYENV_ROOT/bin:$PATH"
 export PYTHONPATH=/usr/local/Cellar:$PYTHONPATH
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 ### ANDROID SDK ###################################################################
 ###################################################################################
-export PATH=/Users/lsmolic/Library/Android/sdk/platform-tools:$PATH
-export ANDROID_SDK=/Users/lsmolic/Library/Android/sdk
+export PATH=$HOME/Library/Android/sdk/platform-tools:$HOME/Library/Android/sdk/emulator:$PATH
+export ANDROID_SDK=$HOME/Library/Android/sdk
+export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
+
+### FASTLANE #########
+######################
+export PATH="$HOME/.fastlane/bin:$PATH"
 
 
 ###   RUBY   ######################################################################

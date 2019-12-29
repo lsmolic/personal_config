@@ -1,11 +1,13 @@
 # CURRENT PROJECT
-alias hl='heroku logs --tail -a risky-business-api-beta'
-alias hc='heroku console -a risky-business-api-beta'
+alias hl='heroku logs --tail -a risky-bizness'
+alias hc='heroku console -a risky-bizness'
 
-
+alias hls='heroku logs --tail -a risky-bizness-staging'
+alias hcs='heroku console -a risky-bizness-staging'
 
 
 alias rnd='open "rndebugger://set-debugger-loc?host=localhost&port=19001"'
+alias android='emulator -avd Pixel_2_API_28'
 
 # Ruby/Rails/Sidekiq/Clock
 alias rv='rbenv'
